@@ -7,6 +7,7 @@
  * @version	v1.0.0	Tuesday, March 31st, 2020.
  * @global
  */
+
 public class Aula09 {
    /**  Clacular o imc
     MENOR QUE 18,5   MAGREZA  0
@@ -15,9 +16,10 @@ public class Aula09 {
     ENTRE 30,0 E 39,9 OBESIDADE II
     MAIOR QUE 40,0    OBESIDADE GAVE III
     */
-
-    public static void main(String[] args) {
-        final var altura = pessoa.getAtura();
+public Double calcular(final Pessoa pessoa){
+    final var altura = pessoa.getAltura();
+    final var imc = pessoa.getPeso() / altura * altura;
+    return imc;
+}
         
     }
-}

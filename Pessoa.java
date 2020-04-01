@@ -29,4 +29,16 @@ public class Pessoa {
     public Double getPeso() {
         return peso;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setAltura(Double altura) {
+        this.altura = altura;
+    }
+
+    public void setPeso(Double peso) {
+        this.peso = peso;
+    }
 }
